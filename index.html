@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Relatorio de Fechamento de Caixa</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box__cadDados">
+
+            <div>
+                <span>Nome:</span>
+                <input style="width: 100%;" type="text" name="nome" id="nome" class="nome" placeholder="Digite seu nome">
+            </div>
+
+            <div class="caixa">
+                <div class="caixa-aberto cont">
+                    <span>Abertura do Caixa: </span>
+                    <input type="date" name="caixa-aberto" id="caixa-aberto" class="caixa-aberto">
+                </div>
+                <br>
+                <div class="caixa-fechado cont">
+                    <span>Fechamento do Caixa:</span>
+                    <input type="date" name="caixa-fechado" id="caixa-fechado" class="caixa-fechado">
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="recebimentos">
+                <span>Recebimentos</span>
+                <br><br>
+                <div class="box-pix cont">
+                    Pix: <input type="number" name="pix" id="pix" class="pix">
+                </div>
+                <br>
+                <div class="box-credito cont">
+                    Credito: <input type="number" name="credito" id="credito" class="credito">
+                </div><br>
+                <div class="box-debito cont">
+                    Debito: <input type="number" name="debito" id="debito" class="debito">
+                </div><br>
+                <div class="box-dinheiro cont">
+                    Dinheiro: <input type="number" name="dinheiro" id="dinheiro" class="dinheiro">
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="buttons">
+                <button class="imprimir btn">Imprimir</button>
+                <button class="WhatsApp btn">WhatsApp</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="print_zap">
+        <h3>Nome</h3>
+        <span>RELATÓRIO DE FECHAMENTO DE CAIXA</span>
+        <h1>CAIXA</h1>
+
+        <div class="caixa-on-off">
+            <div class="just_cont">
+                <span>abertura de caixa</span>
+                <span>fechamento de caixa</span>
+            </div>
+            <div class="just_cont">
+                <span class="on">99/99/9999</span>
+                <span class="off">99/99/9999</span>
+            </div>
+        </div>
+
+        <div class="descricao">
+            <div>
+                <span>descrição</span>
+                <span>total (r$)</span>
+            </div>
+        </div>
+
+        <div class="receb">
+            <div>
+                <span>recebimento</span>
+                <span>00</span>
+            </div>
+        </div>
+        <div class="receb">
+            <div>
+                <span>recebimento</span>
+                <span>00</span>
+            </div>
+        </div>
+        <div class="receb">
+            <div>
+                <span>recebimento</span>
+                <span>00</span>
+            </div>
+        </div>
+        <div class="receb">
+            <div>
+                <span>recebimento</span>
+                <span>00</span>
+            </div>
+        </div>
+
+        <div class="total">
+            <span>total</span>
+            <span>00</span>
+        </div>
+
+    </div>
+
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
